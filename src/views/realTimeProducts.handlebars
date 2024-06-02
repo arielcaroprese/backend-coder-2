@@ -1,0 +1,20 @@
+<h2>Agregar producto</h2>
+<form id="addForm" action="/api/products" method="POST">
+    <input id="title" type="text" name="title" placeholder="Nombre del producto"/>
+    <input id="price" type="text" name="price" placeholder="Precio del producto"/>
+    <input id="description" type="text" name="description" placeholder="Descripcion del producto"/>
+    <button type="submit">Agregar producto</button>
+</form>
+
+<h2>Eliminar producto</h2>
+<form id="deleteForm" action="/api/products">
+    <input id="id" type="text" name="id" placeholder="ID del producto"/>
+    <button type="submit"> Eliminar producto</button>
+</form>
+
+<div id="productsContainer">
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>
